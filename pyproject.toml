@@ -1,0 +1,29 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "job"
+authors = [{name = "Caio Mescouto Terra de Souza", email = "caiomescouto@gmail.com"}]
+dynamic = ["version", "description"]
+readme = "README.md"
+requires-python = ">=3.11, <3.12"
+dependencies = [
+	""
+]
+
+[project.urls]
+Home = ""
+
+[project.optional-dependencies]
+test = []
+docs =[]
+dev =[]
+
+[tool.black]
+line-length = 79
+target-version = ["py311"]
+skip-string-normalization = true
+
+[tool.isort]
+profile = black
