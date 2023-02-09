@@ -1,4 +1,4 @@
-.PHONY: setup install format
+.PHONY: setup install format requirements build run
 
 VPATH = job:data:models:results
 
@@ -27,3 +27,9 @@ format:
 
 requirements:
 	$(pyenv) python scripts/requirements.py
+
+build:
+	sudo docker build --tag jobs .
+
+run:
+	sudo docker run -d --name jobs -p 80:80 jobs
