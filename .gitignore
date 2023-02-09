@@ -6,3 +6,4 @@
 *.feather
 *.db
 __pycache__/
+.coverage

@@ -27,6 +27,7 @@ Home = "https://github.com/caiomts/data_wizards_case"
 test = [
 	"pytest >= 7.2, <7.3",
 	"pytest-cov >= 4.0, <4.1",
+	"httpx >= 0.23, <0.3",
 ]
 
 docs = [

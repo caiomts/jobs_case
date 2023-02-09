@@ -28,6 +28,9 @@ format:
 requirements:
 	$(pyenv) python scripts/requirements.py
 
+tests:
+	$(pyenv) python -m pytest
+
 build:
 	sudo docker build --tag jobs .
 
