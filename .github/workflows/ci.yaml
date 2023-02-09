@@ -10,8 +10,10 @@ jobs:
           python-version: '3.11'
       - name: ci
         run: |
-          pip install -r requirements.txt
-          
-          make format
-          make test
+          python -m pip install -U flit
+          python -m flit install --symlink --deps all
+          python -m black jobs tests
+          python -m flake8 jobs tests
+          python -m isort jobs tests
+          python -m pytest
             
