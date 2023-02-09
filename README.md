@@ -61,7 +61,12 @@ the repo and saving the raw data into `./data/raw`. you
 can use the `Makefile` to build all the models from scratch
 (please, don't do that because it'll cost you a lot of time).
 
-If you want anyway. first follow the [3 - From Source](/README.md#3-From-source).
+If you want anyway. first follow the [3 - From Source](https://github.com/caiomts/jobs_case#3---from-source).
+Then:
+
+```commandline
+$ make
+```
 
 ## Cool features
 
@@ -94,7 +99,7 @@ missing parts.
 The model presented is an adaptation of a model I've already used before. The idea
 was to automate all the pre-processing with the model tuning, like an auto-ml
 which you feed in data and train and update it on the fly. But it
-is missing a lot of iteration. This is due of the focus of the case, My chose was
+is missing a lot of iteration. This is due to the focus of the case, My chose was
 to focus more on the CI and maintenance.
 
 ### Data Drift?
