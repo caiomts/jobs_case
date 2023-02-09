@@ -1,8 +1,8 @@
-.venv
+.venv/
 .ipynb_checkpoints/
 *.csv
 .python-version
 .idea
 *.feather
-
 *.db
+__pycache__/
