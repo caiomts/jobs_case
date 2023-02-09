@@ -1,4 +1,4 @@
-.PHONY: setup install format requirements build run
+.PHONY: setup install format requirements build run tests
 
 VPATH = job:data:models:results
 
